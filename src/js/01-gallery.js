@@ -1,8 +1,7 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
-// import SimpleLightbox from 'simplelightbox';
-// // Дополнительный импорт стилей
-// import 'simplelightbox/dist/simple-lightbox.min.css';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 console.log(galleryItems);
 
 const gallery = document.querySelector('.gallery');
@@ -30,6 +29,19 @@ function createMarkup(galleryItems) {
     .join('');
 }
 
+// gallery.addEventListener("click", onClick);
+
+// function onClick(evt) {
+//   evt.preventDefault();
+//   const imgSource = evt.target.dataset.source;
+//   const instance = basicLightbox.create(`
+//     <img
+//     src="${imgSource}"
+//     >
+// `);
+
+//   instance.show();
+// }
 const galleryLightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,

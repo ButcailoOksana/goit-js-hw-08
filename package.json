@@ -18,8 +18,10 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "declare": "0.0.3",
     "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
+    "module": "^1.2.5",
     "simplelightbox": "^2.10.4"
   },
   "devDependencies": {
